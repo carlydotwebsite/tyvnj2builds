@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME_MOVIES_8-3-2002</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
+		<link rel="manifest" href="./site.webmanifest" />
+    <script type="module" crossorigin src="/assets/index-CwgDCjJ2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CQZYdR-u.css">
+  </head>
+  <body class="crt" id="body">
+    <noscript>You need to enable JavaScript to view the full site. This whole thing is Javascript, sorry.</noscript>
+    <div id="curtain" class="crt">
+    </div>
+    <svg viewBox="0 0 180 100" class="hidden">
+      <filter id='wavedistort1' x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence baseFrequency="0.01 0.4" result="NOISE" numOctaves="2"/>
+    	  <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="30" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>  
+      </filter>
+      <filter id='wavedistort2' x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence baseFrequency="0.01 0.8" result="NOISE" numOctaves="2"/>
+    	  <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="40" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>  
+      </filter>
+      <filter id='wavedistort3' x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence baseFrequency="0.01 0.2" result="NOISE" numOctaves="2"/>
+    	  <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="90" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>  
+      </filter>
+      <filter id='wavedistort4' x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence baseFrequency="0.01 0.5" result="NOISE" numOctaves="2"/>
+    	  <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="60" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>  
+      </filter>
+      <filter id='wavedistort5' x='0%' y='0%' width='100%' height='100%'>
+        <feTurbulence baseFrequency="0.01 0.9" result="NOISE" numOctaves="2"/>
+    	  <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="100" xChannelSelector="R" yChannelSelector="R"></feDisplacementMap>  
+      </filter>
+    </svg>
+    <div id="bg-container">
+      <div id="wavedistort" class="effect">
+        <div id="scalejitter" class="effect">
+          <div id="translatejitter" class="effect">
+            <div class="bg" id="bg1">
+        			<video id="bgvideo">
+        				<source />
+        			</video>
+        			<video id="fgvideo">
+        				<source />
+        			</video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+			<div id="statuswrapper">
+      	<div class="status" id="statuswindow">
+          <ul></ul>
+        </div>
+			</div>
+			<div id="choiceswrapper" class="hidden">
+	      <div class="choices" id="choicewindow">
+	        <ol id="choicelist" class="choicelist"></ol>
+	      </div>
+			</div>
+    </div>
+    <div class="dial" id="dial">
+    </div>
+    <div class="buttons">
+      <button type="button" class="historybutton" id="historybutton" data-menu="history">history</button>
+      <button type="button" class="autoplayoff" id="autoplay">auto</button>
+      <button type="button" class="settingsbutton" id="settings" data-menu="settings">settings</button>
+      <span class="spacer"></span>
+      <button type="button" class="savebutton" id="savebutton" data-menu="load">save</button>
+      <button type="button" class="resetbutton" id="reset">reset</button>
+    </div>
+		<div id="menu-window" class="crt" popover="manual">
+			<header></header>
+			<nav id="menu-nav">
+			</nav>
+			<div id="menu-contents">
+			</div>
+		</div>
+    <div id="saveload-screen" popover="manual">
+      <div id="saveload-progress">Loading...</div>
+    </div>
+    <div id="reset-window" class="hidden crt" popover="manual">
+      <div class="prompt">Are you sure you want to clear your save?</div>
+      <div class="button-row">
+				<button type="button" id="reset-window-yes">Yes</button>
+      	<button type="button" id="reset-window-no">No</button>
+			</div>
+    </div>
+		<div id="screenshot">
+		</div>
+    <div id="static" class="overlay hidden"></div>
+    <div id="rec" class="overlay hidden"></div>
+    <div id="vignette" class="overlay hidden"></div>
+    <div id="vhs" class="overlay hidden"></div>
+    <div id="red" class="overlay hidden"></div>
+    <div id="fastforward" class="overlay hidden"></div>
+  </body>
+</html>
